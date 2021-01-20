@@ -10952,6 +10952,8 @@ body #page-wrapper {
 body #page-wrapper main,
 body #page-wrapper main section {
   width: 100%;
+  background: #63914f;
+  background: linear-gradient(169deg, #63914f 0%, #a4de8e 43%);
 }
 
 body #page-wrapper main h1,
@@ -10986,13 +10988,11 @@ footer small span {
 }
 
 main section#home {
-  color: green;
+  color: #0B3B0B;
 }
 
 main section#products {
   color: #0B3B0B;
-  background: #63914f;
-  background: linear-gradient(169deg, #63914f 0%, #a4de8e 43%);
   padding: 40px 0;
   min-height: 100vh;
 }
@@ -11005,9 +11005,14 @@ main section#products table.table .btn.btn-info {
 
 main section#single-product {
   color: #0B3B0B;
+  padding-bottom: 80px;
 }
 
 main section#single-product .card {
   margin: 0 auto;
+}
+
+main section#single-product .card ul li span {
+  font-weight: 600;
 }
 

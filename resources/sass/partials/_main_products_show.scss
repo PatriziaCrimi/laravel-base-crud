@@ -1,7 +1,14 @@
 main section#single-product {
   color: $primary_color;
+  padding-bottom: $padding_unit * 4;
 
   .card {
     margin: 0 auto;
+
+    ul li {
+      span {
+        font-weight: $font_weight + $font_weight / 2;
+      }
+    }
   }
 }

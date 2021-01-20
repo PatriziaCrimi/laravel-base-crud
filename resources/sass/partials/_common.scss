@@ -6,6 +6,8 @@ body {
     main,
     main section {
       width: 100%;
+      background: rgb(99,145,79);
+      background: linear-gradient(169deg, rgba(99,145,79,1) 0%, rgba(164,222,142,1) 43%);
 
       h1 {
         font-weight: $title_weight;
