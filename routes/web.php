@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/product', function () {
-    return view('product')->name('product');
-});
+// Route::get('/product', function () {
+//     return view('product')->name('product');
+// });
+
+Route::resource('/products', 'ProductController');
