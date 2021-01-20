@@ -10970,7 +10970,13 @@ ul {
 /* Breakpoint Extra Large 1200px xl */
 
 footer {
-  color: red;
+  background-color: #0B3B0B;
+  color: #01DF74;
+  padding: 20px 0;
+}
+
+footer small span {
+  color: #CEF6E3;
 }
 
 main section#home {
