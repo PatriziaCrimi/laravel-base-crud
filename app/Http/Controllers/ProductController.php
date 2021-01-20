@@ -51,7 +51,17 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+      // Retrieving the data of only ONE Object/Instance of the Class "Product"
+      // It is the equivalent of the query: SELECT * FROM products WHERE id = <$id>
+      $product = Product::find($id);
+      // Checking that the ID is valid (Find restituisce NULL se non lo è)
+      if($product) {
+        $data = [
+          'product' => $product,
+        ];
+        return view('products.show', $data);
+      }
+      abort(404);
     }
 
     /**
