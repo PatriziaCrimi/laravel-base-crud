@@ -1,0 +1,16 @@
+main section#products {
+  color: $primary_color;
+  background: rgb(99,145,79);
+  background: linear-gradient(169deg, rgba(99,145,79,1) 0%, rgba(164,222,142,1) 43%);
+  padding: $padding_unit * 2 0;
+  min-height: 100vh;
+
+  table.table {
+
+    .btn.btn-info {
+      color: $third_color;
+      background-color: $primary_color;
+      border-color: $primary_color;
+    }
+  }
+}

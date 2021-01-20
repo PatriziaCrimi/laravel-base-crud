@@ -10952,7 +10952,13 @@ body #page-wrapper {
 body #page-wrapper main,
 body #page-wrapper main section {
   width: 100%;
-  background-color: lightcoral;
+}
+
+body #page-wrapper main h1,
+body #page-wrapper main section h1 {
+  font-weight: 800;
+  text-shadow: 1px 1px #CEF6E3;
+  padding: 40px 0;
 }
 
 ul {
@@ -10983,7 +10989,17 @@ main section#home {
   color: green;
 }
 
-main section#product {
-  color: grey;
+main section#products {
+  color: #0B3B0B;
+  background: #63914f;
+  background: linear-gradient(169deg, #63914f 0%, #a4de8e 43%);
+  padding: 40px 0;
+  min-height: 100vh;
+}
+
+main section#products table.table .btn.btn-info {
+  color: #CEF6E3;
+  background-color: #0B3B0B;
+  border-color: #0B3B0B;
 }
 

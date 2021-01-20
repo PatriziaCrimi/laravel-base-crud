@@ -6,7 +6,12 @@ body {
     main,
     main section {
       width: 100%;
-      background-color: lightcoral;
+
+      h1 {
+        font-weight: $title_weight;
+        text-shadow: 1px 1px $third_color;
+        padding: $padding_unit * 2 0;
+      }
     }
   }
 }

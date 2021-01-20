@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// This instruction is necessary to find the "Product" model (its namespace "App" must be used to find the model)
+use App\Product;
 
 class ProductController extends Controller
 {
@@ -13,7 +15,11 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('products.index');
+
+      $data = [
+        'products' => Product::all() // This is the query to get the data from the db
+      ];
+      return view('products.index', $data);
     }
 
     /**
