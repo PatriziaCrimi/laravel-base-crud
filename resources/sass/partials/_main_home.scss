@@ -1,3 +1,19 @@
 main section#home {
   color: $primary_color;
+
+  p {
+    padding: $padding_unit 0;
+  }
+
+  .quote {
+    padding: $padding_unit / 2 0;
+
+    p {
+      padding: 0;
+
+      &:first-child {
+        font-size: $font_size;
+      }
+    }
+  }
 }

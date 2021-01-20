@@ -10991,6 +10991,22 @@ main section#home {
   color: #0B3B0B;
 }
 
+main section#home p {
+  padding: 20px 0;
+}
+
+main section#home .quote {
+  padding: 10px 0;
+}
+
+main section#home .quote p {
+  padding: 0;
+}
+
+main section#home .quote p:first-child {
+  font-size: 18px;
+}
+
 main section#products {
   color: #0B3B0B;
   padding: 40px 0;
