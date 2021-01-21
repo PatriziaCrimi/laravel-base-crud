@@ -18,18 +18,18 @@
               alt="{{$product->bouquet_name}} bouquet">
             <div class="card-body">
               <h6 class="text-right"># {{$product->id}}</h6>
-              <h5 class="card-title font-weight-bold">
+              <h5 class="card-title font-weight-bold text-capitalize">
                 {{$product->bouquet_name}}
               </h5>
               @if ($product->flowers_types)
-                <p class="card-text">Flowers:
+                <p class="card-text text-capitalize">Flowers:
                   <span class="font-italic">
                     {{$product->flowers_types}}
                   </span>
                 </p>
               @endif
               @if ($product->foliage_type)
-                <p class="card-text">Foliage:
+                <p class="card-text text-capitalize">Foliage:
                   <span class="font-italic">
                     {{$product->foliage_type}}
                   </span>
@@ -90,14 +90,14 @@
                 </li>
               @endif
               @if ($product->description)
-                <li class="list-group-item">Description:
-                  <span>
+                <li class="list-group-item">Description.
+                  <span class="font-weight-normal">
                     {{$product->description}}
                   </span>
                 </li>
               @endif
               @if ($product->notes)
-                <li class="list-group-item">Notes:
+                <li class="list-group-item">Notes.
                   <span>
                     {{$product->notes}}
                   </span>

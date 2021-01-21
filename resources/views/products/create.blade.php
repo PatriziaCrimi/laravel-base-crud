@@ -8,7 +8,6 @@
       <div class="row">
         <div class="col-12">
           <h1 class="text-center">Bouquet Form</h1>
-          <h2 class="text-center">Enter new bouquet</h2>
         </div>
       </div>
       <div class="row">
@@ -24,8 +23,8 @@
             </div>
             <div class="form-group">
               <label for="size">Size</label>
-              <p>Please enter 0 for "small" / 1 for "medium" / 2 for "large" / 3 for "extra large".</p>
               <input type="number" name="size" class="form-control">
+              <p>Please enter a number ranging from 0 to 3. / 0 for "small" / 1 for "medium" / 2 for "large" / 3 for "extra large".</p>
             </div>
             <div class="form-group">
               <label for="price">Price</label>
@@ -45,8 +44,8 @@
             </div>
             <div class="form-group">
               <label for="season">Season</label>
-              <p>Please enter 0 for "Winter" / 1 for "Spring" / 2 for "Summer" / 3 for "Autumn".</p>
               <input type="number" name="season" class="form-control">
+              <p>Please enter a number ranging from 0 to 3. / 0 for "Winter" / 1 for "Spring" / 2 for "Summer" / 3 for "Autumn".</p>
             </div>
             <div class="form-group">
               <label for="bouquet_type">Bouquet type</label>
@@ -54,8 +53,8 @@
             </div>
             <div class="form-group">
               <label for="rating">Rating</label>
-              <p>Please enter a number from 0 to 5.</p>
               <input type="number" name="rating" class="form-control">
+              <p>Please enter a number ranging from 0 to 5.</p>
             </div>
             <div class="form-group">
               <label for="description">Description</label>

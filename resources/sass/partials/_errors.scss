@@ -1,0 +1,21 @@
+main {
+  section#error {
+    color: $primary_color;
+    padding: $padding_unit * 4 0;
+
+    h1 {
+      font-weight: $font_weight * 2;
+    }
+
+    .error-pic {
+      width: 100%;
+      height: 100%;
+      margin: $margin_unit * 4 0;
+
+      img {
+        margin: 0 auto;
+        border-radius: 10%;
+      }
+    }
+  }
+}

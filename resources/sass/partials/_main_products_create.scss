@@ -1,7 +1,10 @@
 main section#bouquet-form {
   color: $primary_color;
+  padding-bottom: $padding_unit;
 
   form {
-
+    label {
+      font-weight: $font_weight + 300;
+    }
   }
 }

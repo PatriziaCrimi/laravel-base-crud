@@ -28,7 +28,7 @@
                   <td>
                     {{$product->id}}
                   </td>
-                  <td>
+                  <td class="text-capitalize">
                     {{$product->bouquet_name}}
                   </td>
                   @if ($product->size === 0)
