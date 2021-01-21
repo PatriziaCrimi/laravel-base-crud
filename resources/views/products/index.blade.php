@@ -45,7 +45,7 @@
                     &euro;
                   </td>
                   <td>
-                    <a href="{{route('products.show', ['product' => $product->id])}}" class="btn btn-info">
+                    <a href="{{route('products.show', ['product' => $product->id])}}" class="btn btn-primary">
                       Details
                     </a>
                   </td>
@@ -59,7 +59,7 @@
         <div class="col-12">
           <div class="new-product text-center font-weight-bold">
             <p class="font-weight-bold"> &gt; Click the button below to add a new item to the list &lt; </p>
-            <a href="{{route('products.create')}}" class="btn btn-info text-uppercase font-weight-bold">
+            <a href="{{route('products.create')}}" class="btn btn-primary text-uppercase font-weight-bold">
               New bouquet
             </a>
           </div>

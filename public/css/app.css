@@ -10020,6 +10020,17 @@ body #page-wrapper main section h1 {
   text-shadow: 1px 1px #CEF6E3;
   padding: 40px 0;
 }
+body #page-wrapper main .btn.btn-primary,
+body #page-wrapper main section .btn.btn-primary {
+  color: #CEF6E3;
+  background-color: #0B3B0B;
+  border-color: #0B3B0B;
+  transition: opacity 0.25s;
+}
+body #page-wrapper main .btn.btn-primary:hover,
+body #page-wrapper main section .btn.btn-primary:hover {
+  opacity: 0.8;
+}
 
 ul {
   list-style-type: none;
@@ -10060,15 +10071,6 @@ main section#products {
   padding: 40px 0;
   min-height: 100vh;
 }
-main section#products .btn.btn-info {
-  color: #CEF6E3;
-  background-color: #0B3B0B;
-  border-color: #0B3B0B;
-  transition: opacity 0.25s;
-}
-main section#products .btn.btn-info:hover {
-  opacity: 0.8;
-}
 main section#products .new-product {
   padding: 40px 0;
 }
@@ -10085,4 +10087,8 @@ main section#single-product .card {
 }
 main section#single-product .card ul li span {
   font-weight: 600;
+}
+
+main section#bouquet-form {
+  color: #0B3B0B;
 }

@@ -14,6 +14,17 @@ body {
         text-shadow: 1px 1px $third_color;
         padding: $padding_unit * 2 0;
       }
+
+      .btn.btn-primary {
+        color: $third_color;
+        background-color: $primary_color;
+        border-color: $primary_color;
+        transition: opacity $hover_time;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
     }
   }
 }
