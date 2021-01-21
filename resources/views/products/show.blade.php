@@ -84,7 +84,7 @@
               @if ($product->rating || $product->rating === 0)
                 <li class="list-group-item">Rating:
                   <span class="font-weight-bold">
-                    {{$product->rating}}
+                    {{number_format($product->rating, 1, '.', '.')}}
                   </span>
                   <span>/ 5</span>
                 </li>
