@@ -24,7 +24,7 @@
             </div>
             <div class="form-group">
               <label for="size">Size</label>
-              <p>Please enter 0 for "small" / 1 for "medium" / 2 for "large" / 3 for "extra large"</p>
+              <p>Please enter 0 for "small" / 1 for "medium" / 2 for "large" / 3 for "extra large".</p>
               <input type="number" name="size" class="form-control">
             </div>
             <div class="form-group">
@@ -45,7 +45,7 @@
             </div>
             <div class="form-group">
               <label for="season">Season</label>
-              <p>Please enter 0 for "Winter" / 1 for "Spring" / 2 for "Summer" / 3 for "Autumn"</p>
+              <p>Please enter 0 for "Winter" / 1 for "Spring" / 2 for "Summer" / 3 for "Autumn".</p>
               <input type="number" name="season" class="form-control">
             </div>
             <div class="form-group">
@@ -54,7 +54,7 @@
             </div>
             <div class="form-group">
               <label for="rating">Rating</label>
-              <p>Please enter a number from 0 to 5</p>
+              <p>Please enter a number from 0 to 5.</p>
               <input type="number" name="rating" class="form-control">
             </div>
             <div class="form-group">

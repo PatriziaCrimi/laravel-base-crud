@@ -40,7 +40,24 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-      dd('form inviato');
+      // Storing all form data in a variable
+      $data = $request->all();
+      // Creating a new Object/Instance containing all the form data
+      $new_bouquet = new Product();
+      // Assigning all the form data to the variabli d'istanza
+      /* ---------- OPTION 1 ---------- */
+      $new_bouquet->bouquet_name = $data['bouquet_name'];
+      $new_bouquet->size = $data['size'];
+      $new_bouquet->price = $data['price'];
+      $new_bouquet->flowers_types = $data['flowers_types'];
+      $new_bouquet->foliage_type = $data['foliage_type'];
+      $new_bouquet->colors = $data['colors'];
+      $new_bouquet->season = $data['season'];
+      $new_bouquet->bouquet_type = $data['bouquet_type'];
+      $new_bouquet->rating = $data['rating'];
+      $new_bouquet->description = $data['description'];
+      $new_bouquet->notes = $data['notes'];
+      $new_bouquet->save();
     }
 
     /**
