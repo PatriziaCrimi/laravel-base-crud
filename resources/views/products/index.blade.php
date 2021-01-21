@@ -41,8 +41,8 @@
                     <td>extra large</td>
                   @endif
                   <td>
-                    {{$product->price}}
-                    €
+                    {{number_format($product->price, 2, ',', '.')}}
+                    &euro;
                   </td>
                   <td>
                     <a href="{{route('products.show', ['product' => $product->id])}}" class="btn btn-info">

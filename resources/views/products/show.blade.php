@@ -50,8 +50,8 @@
               </li>
               <li class="list-group-item">Price:
                 <span class="font-weight-bold">
-                  {{$product->price}}
-                  €
+                  {{number_format($product->price, 2, ',', '.')}}
+                  &euro;
                 </span>
               </li>
               @if ($product->season || $product->season === 0)

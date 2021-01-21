@@ -5,7 +5,7 @@
 CLASS "PRODUCT"
 
 id												INT, PRIMARY_KEY (AUTO_INCREMENT, NOT NULL, UNIQUE, INDEX)
-bouquet_name									VARCHAR (50), NOT NULL, INDEX
+bouquet_name									VARCHAR (50), NOT NULL
 size											TINYINT, NOT NULL
 	(0 = small / 1 = medium / 2 = large / 3 = extra large)
 price											FLOAT(6,2), NOT NULL
