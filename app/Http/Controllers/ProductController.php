@@ -44,8 +44,11 @@ class ProductController extends Controller
       $data = $request->all();
       // Creating a new Object/Instance containing all the form data
       $new_bouquet = new Product();
-      // Assigning all the form data to the variabli d'istanza
-      /* ---------- OPTION 1 ---------- */
+      // Assigning all the form data to the Instance Variables
+      // ---------- OPTION 1 ----------
+      $new_bouquet->fill($data);
+      /*
+      // ---------- OPTION 2 ----------
       $new_bouquet->bouquet_name = $data['bouquet_name'];
       $new_bouquet->size = $data['size'];
       $new_bouquet->price = $data['price'];
@@ -57,7 +60,11 @@ class ProductController extends Controller
       $new_bouquet->rating = $data['rating'];
       $new_bouquet->description = $data['description'];
       $new_bouquet->notes = $data['notes'];
+      */
+      // Storing the data
       $new_bouquet->save();
+      // Redirecting to a web page (in this case the "products/index" page)
+      return redirect()->route('products.index');
     }
 
     /**
