@@ -55,6 +55,16 @@
           </table>
         </div>
       </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="new-product text-center font-weight-bold">
+            <p class="font-weight-bold"> &gt; Click the button below to add a new item to the list &lt; </p>
+            <a href="{{route('products.create')}}" class="btn btn-info text-uppercase font-weight-bold">
+              New bouquet
+            </a>
+          </div>
+        </div>
+      </div>
     </div>  {{-- Closing Container --}}
   </section>
 @endsection

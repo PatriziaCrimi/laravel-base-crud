@@ -10060,10 +10060,20 @@ main section#products {
   padding: 40px 0;
   min-height: 100vh;
 }
-main section#products table.table .btn.btn-info {
+main section#products .btn.btn-info {
   color: #CEF6E3;
   background-color: #0B3B0B;
   border-color: #0B3B0B;
+  transition: opacity 0.25s;
+}
+main section#products .btn.btn-info:hover {
+  opacity: 0.8;
+}
+main section#products .new-product {
+  padding: 40px 0;
+}
+main section#products .new-product p {
+  padding: 20px 0;
 }
 
 main section#single-product {

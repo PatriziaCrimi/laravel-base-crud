@@ -29,7 +29,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+      return view('products.create');
     }
 
     /**
@@ -49,11 +49,20 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+
+    // Retrieving the data from only ONE Object/Instance of the Class "Product"
+    /* ---------- OPTION 1 ----------
+      Gli posso anche passare direttamente l'Oggetto/Istanza di tipo "Product", dove "Product" è la Classe/Model e in questo caso non avrò bisogno del Product::find($id)
+    */
+    public function show(Product $product)
+    /* ---------- OPTION 2 ----------
+      public function show($id)
+      // This will need the following instruction: "Product::find($id)" which is the equivalent of the query:
+      SELECT * FROM products WHERE id = <$id>
+    */
     {
-      // Retrieving the data of only ONE Object/Instance of the Class "Product"
-      // It is the equivalent of the query: SELECT * FROM products WHERE id = <$id>
-      $product = Product::find($id);
+      // $product = Product::find($id);
+
       // Checking that the ID is valid (Find restituisce NULL se non lo è)
       if($product) {
         $data = [

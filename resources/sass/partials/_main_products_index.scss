@@ -3,12 +3,22 @@ main section#products {
   padding: $padding_unit * 2 0;
   min-height: 100vh;
 
-  table.table {
+  .btn.btn-info {
+    color: $third_color;
+    background-color: $primary_color;
+    border-color: $primary_color;
+    transition: opacity 0.25s;
 
-    .btn.btn-info {
-      color: $third_color;
-      background-color: $primary_color;
-      border-color: $primary_color;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .new-product {
+    padding: $padding_unit * 2 0;
+
+    p {
+      padding: $padding_unit 0;
     }
   }
 }
