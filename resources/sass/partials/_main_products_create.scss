@@ -6,5 +6,9 @@ main section#bouquet-form {
     label {
       font-weight: $font_weight + 300;
     }
+
+    p.radio-box {
+      padding-left: $padding_unit;
+    }
   }
 }

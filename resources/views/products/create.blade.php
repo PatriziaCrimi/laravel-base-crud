@@ -24,8 +24,32 @@
             </div>
             <div class="form-group">
               <label for="size">Size</label>
-              <input id="bouquet-size" type="number" name="size" class="form-control">
-              <p>Please enter a number ranging from 0 to 3. / 0 for "small" / 1 for "medium" / 2 for "large" / 3 for "extra large".</p>
+              {{-- -------------- OPTION 1: RADIO BOX --------------  --}}
+              <p class="radio-box">
+                <input type="radio" name="size" value="0">
+                small
+              </p>
+              <p class="radio-box">
+                <input type="radio" name="size" value="1">
+                medium
+              </p>
+              <p class="radio-box">
+                <input type="radio" name="size" value="2">
+                large
+              </p>
+              <p class="radio-box">
+                <input type="radio" name="size" value="3">
+                extra large
+              </p>
+              {{-- -------------- OPTION 2: SELECT--------------  --}}
+              {{-- <select name="size" class="form-control">
+                <option value="">--select--</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <p>Please enter a number ranging from 0 to 3. / 0 for "small" / 1 for "medium" / 2 for "large" / 3 for "extra large".</p> --}}
             </div>
             <div class="form-group">
               <label for="price">Price</label>
@@ -45,8 +69,32 @@
             </div>
             <div class="form-group">
               <label for="season">Season</label>
-              <input id="bouquet-season" type="number" name="season" class="form-control">
-              <p>Please enter a number ranging from 0 to 3. / 0 for "Winter" / 1 for "Spring" / 2 for "Summer" / 3 for "Autumn".</p>
+              {{-- -------------- OPTION 1: RADIO BOX --------------  --}}
+              <p class="radio-box">
+                <input type="radio" name="season" value="0">
+                Winter
+              </p>
+              <p class="radio-box">
+                <input type="radio" name="season" value="1">
+                Spring
+              </p>
+              <p class="radio-box">
+                <input type="radio" name="season" value="2">
+                Summer
+              </p>
+              <p class="radio-box">
+                <input type="radio" name="season" value="3">
+                Autumn
+              </p>
+              {{-- -------------- OPTION 2: SELECT--------------  --}}
+              {{-- <select name="season" class="form-control">
+                <option value="">--select--</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <p>Please enter a number ranging from 0 to 3. / 0 for "Winter" / 1 for "Spring" / 2 for "Summer" / 3 for "Autumn".</p> --}}
             </div>
             <div class="form-group">
               <label for="bouquet_type">Bouquet type</label>

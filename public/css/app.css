@@ -10095,6 +10095,9 @@ main section#bouquet-form {
 main section#bouquet-form form label {
   font-weight: 700;
 }
+main section#bouquet-form form p.radio-box {
+  padding-left: 20px;
+}
 
 main section#error {
   color: #0B3B0B;

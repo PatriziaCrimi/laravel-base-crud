@@ -30237,17 +30237,8 @@ $(document).ready(function () {
     // Checking that "bouquet name" is a valid input: VARCHAR(50)
     var input_name = $('#bouquet-name').val();
 
-    if (input_name.length > 50) {
+    if (input_name.length < 50) {
       console.log('ERROR. The bouquet name you entered is longer than 50 characters.');
-    } // Checking that "bouquet size" is a valid input: NUM ranging from 0 to 3
-
-
-    var min_size = 0;
-    var max_size = 3;
-    var input_size = $('#bouquet-size').val();
-
-    if (!isNumeric(input_size) || input_size < min_size || input_size > max_size) {
-      console.log('ERROR. The bouquet size you entered is not valid: it is not a number ranging from 0 to 3.');
     } // Checking that "bouquet price" is a valid input: NUM > 0
 
 
@@ -30255,15 +30246,6 @@ $(document).ready(function () {
 
     if (!isNumeric(input_price) || input_price <= 0) {
       console.log('ERROR. The bouquet price you entered is not valid: it is not a number higher than 0.');
-    } // Checking that "bouquet season" is a valid input: NUM ranging from 0 to 3
-
-
-    var min_season = 0;
-    var max_season = 3;
-    var input_season = $('#bouquet-season').val();
-
-    if (!isNumeric(input_season) || input_season < min_season || input_season > max_season) {
-      console.log('ERROR. The bouquet season you entered is not valid: it is not a number ranging from 0 to 3.');
     } // Checking that "bouquet rating" is a valid input: NUM ranging from 0 to 5
 
 
