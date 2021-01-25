@@ -45,12 +45,22 @@
                     &euro;
                   </td>
                   <td>
+                    {{-- Show Details button --}}
                     <a href="{{route('products.show', ['product' => $product->id])}}" class="btn btn-primary">
                       Details
                     </a>
+                    {{-- Edit button --}}
                     <a href="{{route('products.edit', ['product' => $product->id])}}" class="btn btn-primary">
                       Edit
                     </a>
+                    {{-- Delete button --}}
+                    <form method="POST" class="d-inline-block" action="{{route('products.destroy', ['product' => $product->id])}}">
+                      @csrf
+                      @method('DELETE')
+                      <button type="submit" name="button" class="btn btn-primary">
+                        Delete
+                      </button>
+                    </form>
                   </td>
                 </tr>
               @endforeach
