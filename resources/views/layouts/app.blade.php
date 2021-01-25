@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Flower Shop | @yield('page-title')</title>
+    <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
   </head>
   <body>
