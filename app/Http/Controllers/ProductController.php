@@ -63,8 +63,10 @@ class ProductController extends Controller
     */
     // Storing the data
     $new_bouquet->save();
-    // Redirecting to a web page (in this case the "products/index" page)
-    return redirect()->route('products.index');
+    // New QUERY to select the latest product added to be sure to redirect to the very last item entered
+    $last_entered_bouquet = Product::orderBy('id', 'desc')->first();
+    // Redirecting to a web page (in this case the "details" page of the latest product entered)
+    return redirect()->route('products.show', ['product' => $new_bouquet->id]);
   }
 
   /**
