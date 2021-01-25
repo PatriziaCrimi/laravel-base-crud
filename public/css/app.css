@@ -10025,6 +10025,8 @@ body #page-wrapper main section .btn.btn-primary {
   color: #CEF6E3;
   background-color: #0B3B0B;
   border-color: #0B3B0B;
+  margin: 0 10px;
+  min-width: 75px;
   transition: opacity 0.25s;
 }
 body #page-wrapper main .btn.btn-primary:hover,
@@ -10088,14 +10090,14 @@ main section#single-product .card ul li span {
   font-weight: 600;
 }
 
-main section#bouquet-form {
+main section.bouquet-form {
   color: #0B3B0B;
   padding-bottom: 20px;
 }
-main section#bouquet-form form label {
+main section.bouquet-form form label {
   font-weight: 700;
 }
-main section#bouquet-form form p.radio-box {
+main section.bouquet-form form p.radio-box {
   padding-left: 20px;
 }
 

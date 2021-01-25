@@ -19,6 +19,8 @@ body {
         color: $third_color;
         background-color: $primary_color;
         border-color: $primary_color;
+        margin: 0 $margin_unit;
+        min-width: $width_buttons;
         transition: opacity $hover_time;
 
         &:hover {

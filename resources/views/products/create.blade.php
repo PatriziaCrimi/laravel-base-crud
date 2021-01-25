@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('page-title', 'Bouquet Form')
+@section('page-title', 'New Bouquet')
 
 @section('section')
-  <section id="bouquet-form">
+  <section class="bouquet-form">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="text-center">Bouquet Form</h1>
+          <h1 class="text-center">New Bouquet</h1>
         </div>
       </div>
       <div class="row">
@@ -44,12 +44,11 @@
               {{-- -------------- OPTION 2: SELECT--------------  --}}
               {{-- <select name="size" class="form-control">
                 <option value="">--select--</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-              <p>Please enter a number ranging from 0 to 3. / 0 for "small" / 1 for "medium" / 2 for "large" / 3 for "extra large".</p> --}}
+                <option value="0">small</option>
+                <option value="1">medium</option>
+                <option value="2">large</option>
+                <option value="3">extra large</option>
+              </select> --}}
             </div>
             <div class="form-group">
               <label for="price">Price</label>
@@ -89,12 +88,11 @@
               {{-- -------------- OPTION 2: SELECT--------------  --}}
               {{-- <select name="season" class="form-control">
                 <option value="">--select--</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-              <p>Please enter a number ranging from 0 to 3. / 0 for "Winter" / 1 for "Spring" / 2 for "Summer" / 3 for "Autumn".</p> --}}
+                <option value="0">Winter</option>
+                <option value="1">Spring</option>
+                <option value="2">Summer</option>
+                <option value="3">Autumn</option>
+              </select> --}}
             </div>
             <div class="form-group">
               <label for="bouquet_type">Bouquet type</label>
@@ -107,13 +105,13 @@
             </div>
             <div class="form-group">
               <label for="description">Description</label>
-              <input type="text" name="description" class="form-control">
+              <textarea name="description" rows="4" class="form-control"></textarea>
             </div>
             <div class="form-group">
               <label for="notes">Notes</label>
               <input type="text" name="notes" class="form-control">
             </div>
-            <div class="form-group">
+            <div class="form-group d-flex justify-content-end">
               {{-- The attribute "submit" must be specified --}}
               <button type="submit" class="btn btn-primary text-uppercase">
                 Save

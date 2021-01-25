@@ -19,7 +19,7 @@
                 <th scope="col">Name</th>
                 <th scope="col">Size</th>
                 <th scope="col">Price</th>
-                <th scope="col">Edit</th>
+                <th scope="col">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -48,6 +48,9 @@
                     <a href="{{route('products.show', ['product' => $product->id])}}" class="btn btn-primary">
                       Details
                     </a>
+                    <a href="{{route('products.edit', ['product' => $product->id])}}" class="btn btn-primary">
+                      Edit
+                    </a>
                   </td>
                 </tr>
               @endforeach
@@ -55,6 +58,7 @@
           </table>
         </div>
       </div>
+      {{-- New Product --}}
       <div class="row">
         <div class="col-12">
           <div class="new-product text-center font-weight-bold">
